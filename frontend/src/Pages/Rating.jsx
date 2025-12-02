@@ -71,14 +71,14 @@ function Rating() {
             <p className="empty">No hay datos.</p>
           ) : (
             ratings.map((r) => (
-              <div key={r.id} className="card-rating">
+              <div key={r.id} className={`card-rating ${r.score >= 9 ? "excelente" : r.score >= 7 ? "regular" : "malo"}`}>
                 <h2 className="name">{r.name}</h2>
 
                 <p className="score">
                   <strong>Score:</strong> {r.score}
                 </p>
 
-                <p>Promedio: {r.score} %</p>
+                <p>Promedio: {r.score * 10} %</p>
 
                 <div className="pie">
                   <p>
