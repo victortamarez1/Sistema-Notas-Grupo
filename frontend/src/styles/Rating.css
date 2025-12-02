@@ -1,0 +1,104 @@
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin-left: 40px;   
+  margin-top: 40px;
+  padding: 10px;
+}
+
+/* Título principal */
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+/* Lista de tarjetas */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: flex-start;
+}
+
+/* Tarjeta individual */
+.card-rating {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  width: 260px;
+
+  /* Sombra elegante */
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover */
+.card-rating:hover {
+  transform: translateX(4px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Nombre */
+.name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Score */
+.score {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Texto vacío */
+.empty {
+  text-align: left; 
+  color: #999;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.edit-link{
+  text-decoration: none;
+  background-color: #2FCBEE;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.pie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.eliminar{
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+

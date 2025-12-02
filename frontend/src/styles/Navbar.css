@@ -1,0 +1,76 @@
+/* Contenedor principal si quieres alinearlo */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+.card .card-navbar{
+    margin: 30px;
+}
+
+/* Tarjeta */
+.card-navbar {
+    background-color: white;
+    box-shadow: 2px 4px 6px #22212155;
+    padding: 12px;
+    width: 180px;
+    border-radius: 8px;
+    text-align: center;
+    /* ANIMACIÓN */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.card-navbar:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 8px 12px #22212177;
+}
+
+/* Número */
+.card-navbar h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2FCBEE;
+}
+
+/* Texto */
+.card-navbar p {
+    margin: 0;
+    color: #2FCBEE;
+    font-weight: 500;
+}
+
+.card-add{
+     background-color: white;
+    box-shadow: 2px 4px 6px #22212155;
+    padding: 12px;
+    width: 180px;
+    border-radius: 8px;
+    text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.card-add:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 8px 12px #22212177;
+}
+
+.card-add p {
+    margin: 0;
+    color: #2FCBEE;
+    font-weight: 500;
+}
+
+.card-add h3{
+    font-size: 30px;
+    color: #2FCBEE;
+}
+
+.card-link{
+    text-decoration: none;
+}
